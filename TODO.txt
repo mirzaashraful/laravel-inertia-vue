@@ -72,3 +72,33 @@ composer create-project laravel/laravel my-app
    -    Add CSS CDN <link rel="stylesheet" href="{{url('https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css')}}" />
    -    Add Route Start End End @app.js
 
+   @IF USE Tailwind CSS
+11. Install Tailwind CSS
+   - npm install -D tailwindcss postcss autoprefixer
+   - npx tailwindcss init    // Initialize Tailwind CSS:
+   - Configure Tailwind CSS
+   - Update tailwind.config.js
+
+   /** @type {import('tailwindcss').Config} */
+   export default {
+       content: [
+           './resources/**/*.blade.php',
+           './resources/**/*.js',
+           './resources/**/*.vue',
+       ],
+       theme: {
+           extend: {},
+       },
+       plugins: [],
+   };
+
+     - Add Tailwind Directives to CSS
+     - Replace the content of resources/css/app.css
+
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+
+   @IF USE Bootstrap CSS
+12. npm install bootstrap@5.3.3
+

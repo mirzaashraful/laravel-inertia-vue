@@ -14,4 +14,9 @@ class SiteController extends Controller
         return Inertia::render('HomePage');
     }
 
+    function ProfilePage ()
+    {
+      return Inertia::render('ProfilePage');
+    }
+
 }

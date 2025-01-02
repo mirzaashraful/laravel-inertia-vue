@@ -10,6 +10,13 @@ class SiteController extends Controller
 {
     function HomePage()
     {
+        //Model
+        // Database
+        //SEO
+        // Business Logic
+        // Extranal API Call
+
+
        // return view('home'); Blade view laravel
         return Inertia::render('HomePage');
     }
